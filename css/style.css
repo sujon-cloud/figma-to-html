@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* navbar styles  */
+.navbar {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.logo a {
+  font-size: 18px;
+  color: #111111;
+}
+
+.nav-links {
+  display: flex;
+}
+.nav-link {
+  margin-left: 1rem;
+  font-size: 14px;
+}
+.nav-link a {
+  color: #111111;
+}
+
+/* hero area styles  */
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+.hero-info {
+  margin-bottom: 4rem;
+}
+.hero-info h3 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+.hero-info h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.hero-info p {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+.hero-info .hero-btn {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 1rem 3rem;
+  display: inline-block;
+}
+.hero-info .hero-btn:hover {
+  box-shadow: 1px 1px 10px #2d2d2d;
+}
+
+.brand-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* services area styles */
+.services-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem 0;
+}
+.service {
+  text-align: center;
+}
+.service img {
+  width: 100px;
+  margin-bottom: 1.3rem;
+}
+.service h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+/* portfolio area styles  */
+.portfolio-area {
+  padding: 3rem 0;
+}
+.portfolio-area h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.project img {
+  margin-bottom: 0.5rem;
+}
+.project h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.project p {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+  .hero-area {
+    flex-direction: row;
+  }
+  .hero-info {
+    margin-bottom: 0;
+  }
+  .brand-area {
+    flex-direction: row;
+  }
+
+  .services-area {
+    display: flex;
+    flex-direction: row;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
